@@ -6,8 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Home Page</title>
+     <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+
+    <!-- Hamburger menu -->
+    <link rel="stylesheet" href="css/mmenu/mmenu-light.css">
+
+    <!--    Font Awesome-->
+    <script src="https://kit.fontawesome.com/c039a680d0.js" crossorigin="anonymous"></script>
+
+    <!--Splide-->
+    <link rel="stylesheet" href="../css/plugins/splide/splide.min.css">
+
 </head>
+    <header>
+    <section class="logo">
+        <a id="hammenu" href="#my-menu">
+
+            <i class="fas fa-4x fa-bars"></i>
+        </a>
+
+        <img src="Images/primary-logo.png" alt="Primary Logo">
+        <h1>Penning the Future</h1>
+        <section class="btn-container">
+            <a class="red-button" href="#">Join</a>
+        </section>
+    </section>
+
+    <!--Navigation menu-->
+
+    <nav id="my-menu">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">News & Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Articles</a>
+            </li>
+            <li>
+                <a href="#">Profiles</a>
+            </li>
+            <li>
+                <a href="#">Books</a>
+            </li>
+            <li>
+                <a href="#">Awards</a>
+            </li>
+            <li>
+                <a class="hide" href="#">Join</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--END Header-->
 <body>
+     <main>
+        <!--Splide-->
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="../images/Verstappen-kick.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="../images/Verstappen-kick.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="../images/Verstappen-kick.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="splide__progress">
+                <div class="splide__progress__bar">
+                </div>
+            </div>
+
+        </div>
+        <!--END Splide-->
+
+        <!--Logo, about, buttons-->
+        <section class="landing-flex">
+
+            <img src="../images/Circular-logo.png">
+
+            <section class="landing-text">
+                <h1>The Media Club of Ottawa</h1>
+
+                <p>Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed
+                 do eiusmod tempor incididunt ut 
+                 labore et dolore magna aliqua. 
+                 Maecenas sed enim ut sem viverra 
+                 aliquet eget sit amet. Sed cras 
+                 ornare arcu dui vivamus arcu.</p>
+            </section>
+            
+            <section class="landing-buttons">
+                <a class="blue-button" href=#>Learn More</a>
+                <a class="red-button" href=#>Join</a>
+            </section>
+
+        </section>
+        <!--END Logo, about, buttons-->
     <section class="news-events">
         <section class="btn-container">
             <h2>What's going on?</h2>
@@ -45,14 +159,54 @@
         </section>
     </section>
 
-
-
-
         <section class="btn-container">
             <a class="red-button" href="#">News & Events</a>
         </section>
 
     </section>
+         
+    </main>
+
+    <footer class="quick-links">
+
+        <h3>Quick links</h3>
+
+        <section class="grid-container">
+
+
+            <a class="" href="#">News & Events</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Articles</a>
+
+            <a href="#">Contact Us</a>
+
+            <a href="#">Books</a>
+
+            <a href="#">Profiles</a>
+
+            <a href="#">Awards</a>
+        </section>
+        <section class="btn-container">
+            <a class="red-button" href="#">Join</a>
+        </section>
+
+
+
+
+        <section class="copyright">
+            <p class="">Media Club of Ottawa © All Rights Rights Reserved</p>
+        </section>
+    </footer>
+
+    <!--Menu Plugin-->
+    <script src="js/mmenu/mmenu-light.js"></script>
+    <script src="js/mmenu/mmenu-light.init.js"></script>
+
+    <!-- Splide Plugin -->
+    <script src="../js/splide/splide.min.js"></script>
+    <script src="../js/splide/splide.init.js"></script>
     
 </body>
 </html>
