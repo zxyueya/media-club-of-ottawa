@@ -576,7 +576,7 @@ footer .grid-container {
     background-color: #99C8F2;
     text-align: center;
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .executive a {
@@ -597,11 +597,11 @@ footer .grid-container {
 
 .executive-text h3, .executive-text p {
     font-family: roboto;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .executive h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* -------------- END ABOUT PAGE ---------------------*/
@@ -976,7 +976,91 @@ footer .grid-container {
     margin: 2rem auto;
 }
 
-.books .grid-container {
+/* Daisys additional code */
+
+/* .right-tier{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            } */
+
+    .left-tier {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .right-tier .item {
+        background-color: #e4e4e4;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        max-width: 10rem;
+    }
+
+    .book-filter .search {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        border-radius: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+
+    .book-filter .search p {
+        margin-right: 5rem;
+        color: #707070;
+    }
+
+    .book-filter .author-name {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        border-radius: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0.8rem;
+    }
+
+    .book-filter .author-name p {
+        margin-left: 4rem;
+        color: #707070;
+    }
+
+    .book-filter .book-genre {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        border-radius: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0.8rem;
+    }
+
+    .book-filter .book-genre p {
+        margin-left: 4rem;
+        color: #707070;
+    }
+
+    .book-filter .release-year {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        border-radius: 1.5rem;
+        padding: 0.8rem;
+    }
+
+    .book-filter .release-year p {
+        margin-left: 4rem;
+        color: #707070;
+    }
+
+
+    /* End of Daisy additional code */
+
+
+/* .books .grid-container {
     display: inline-grid;
 }
 
@@ -987,7 +1071,7 @@ footer .grid-container {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
     max-width: 10rem;
-}
+} */
 
 .books .grid-container .item img {
     max-width: 10rem;
@@ -1203,23 +1287,22 @@ footer .grid-container {
     margin-left: 0.5rem;
 }
 
-form,
-.get-in-touch {
+form {
     max-width: 80%;
     margin: 0 auto 3rem auto;
     padding: 2rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-sizing: border-box;
 }
 
 .join form {
-    background: #E4E4E4;
+    background: #f1f1f1; 
     position: relative;
 }
 
 .join form h3 {
     background-color: #2A5888;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     margin: 0 auto;
     padding: 1rem;
     color: white;
@@ -1229,6 +1312,11 @@ form,
 
 .join form input {
     margin-bottom: 1rem;
+}
+
+.join form p.personal-info {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .join form input.submit {
@@ -1244,6 +1332,11 @@ form,
 
 .get-in-touch {
     background-color: #2A5888;
+    max-width: 80%;
+    margin: 0 auto 3rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
 }
 
 .get-in-touch i,
@@ -1343,6 +1436,24 @@ form,
 
     }
 
+    /* ------ Books PAGE 480px ------- */
+    /* Daisy Additional Page */
+
+    .books .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-tier {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-tier .item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 
 
 }
@@ -1373,6 +1484,19 @@ Custom Media Query - 640px and up
 
     footer .grid-container {
         grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+
+    /* books page */
+
+    /* Daisys additional code */
+    .left-tier {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .right-tier {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
     }
 
 
@@ -1475,6 +1599,20 @@ Custom Media Query - 640px and up
 
     #carleton article {
         margin: 1rem 5rem 0 5rem;
+    }
+
+    /* Books page */
+
+    /* Daisys additional code */
+    .left-tier {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .right-tier {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        /* grid-gap: 1rem; */
     }
 
 }
@@ -1649,8 +1787,13 @@ Custom Media Query - 640px and up
     }
 
     /*BOOKS PAGE 960px----------------------------------*/
-    .books .grid-container {
-        display: inline-grid;
+
+    /* Daisys additional code */
+
+    .right-tier {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 1rem;
     }
 
     /*Awards Page 960px------------------------------------------------*/
@@ -1725,7 +1868,7 @@ Custom Media Query - 640px and up
 
     .join .join-intro {
         grid-area: intro;
-        max-width: 60%;
+        /* max-width: 60%; */
     }
 
     .join .rate {
@@ -1734,22 +1877,21 @@ Custom Media Query - 640px and up
 
     .join .get-in-touch {
         grid-area: contact;
+        margin: 0 2rem;
     }
 
     .join .join-grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
-            "form intro"
-            "form rate"
-            "form contact"
-            "form ."
-            "form ."
+            "form form intro ."
+            "form form rate ."
+            "form form contact."
+            "form form . ."
+            "form form . ."
         ;
     }
 }
-
-
 
 
 
@@ -1918,4 +2060,18 @@ Custom Media Query - 640px and up
         margin: 1rem 15rem 0 15rem;
     }
 
+    /*Daisy additional code */
+    /* Books page  */
+
+    .books .grid-container {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+    }
+
+    .right-tier {
+        margin-right: 7rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 1rem;
+    }
 }
