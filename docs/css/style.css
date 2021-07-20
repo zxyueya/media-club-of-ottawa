@@ -40,11 +40,13 @@ h2 {
 
 p {
     color: black;
+    font-family: 'roboto', sans-serif;
+    line-height: 2rem;
+    font-size: 1.2rem;
 }
 
 
 time,
-p,
 ul,
 footer {
     font-family: 'roboto', sans-serif;
@@ -198,6 +200,7 @@ footer {
 
 footer .copyright p {
     color: white;
+    line-height: 1.15rem;
 }
 
 .quick-links h3 {
@@ -507,7 +510,8 @@ footer .grid-container {
 /*General*/
 
 .about-main p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .about-text {
@@ -1270,7 +1274,10 @@ footer .grid-container {
 
 .join .join-intro h3 {
     margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
 }
+
 
 
 .join .rate {
@@ -1281,6 +1288,15 @@ footer .grid-container {
 .join .rate h3 {
     color: #2A5888;
     margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.join .rate .italic {
+    font-size: 1.2rem;
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+
 }
 
 .rate span {
@@ -1297,26 +1313,62 @@ form {
 
 .join form {
     background: #f1f1f1; 
-    position: relative;
+    /* position: relative; */
 }
+
 
 .join form h3 {
     background-color: #2A5888;
     border-radius: 0.2rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
     color: white;
-    position: absolute;
-    top: -2rem;
+    /* position: absolute; */
+    position: relative;
+    top: -3.5rem;
+    font-size: 1.8rem;
+}
+
+.join form p {
+    line-height: 2rem;
+}
+
+.join form .phones {
+    display: block;
+    font-weight: 700;
+    margin-top: 1.2rem;   
+}
+
+.join form .email {
+    display: block;
+    margin-top: 1.5rem;
 }
 
 .join form input {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.join form input[type="text"] {
+    /* padding: 0.6rem 5rem; */
+    width: 18rem;
+    height: 2rem;
 }
 
 .join form p.personal-info {
     text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.join .membership p {
+    margin-bottom: 0.8rem;
+}
+
+.join .membership label {
+    font-family: 'roboto', sans-serif;
     font-size: 1.2rem;
+    line-height: 2rem;
+    margin-left: 1rem;
 }
 
 .join form input.submit {
@@ -1327,6 +1379,8 @@ form {
     padding: 1rem 3rem;
     margin: 3rem auto 1rem auto;
     border-radius: 2rem;
+    font-family: 'roboto', sans-serif;
+
 }
 
 
@@ -1347,6 +1401,7 @@ form {
 
 .get-in-touch h3 {
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .get-in-touch i,
@@ -1357,8 +1412,110 @@ form {
 
 .get-in-touch .email,
 .get-in-touch .facebook {
+    display: flex;
     margin-top: 2rem;
 }
+
+.get-in-touch a {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Tooltip hovering */
+.help-tip{
+    /* position: absolute;
+    top: 18px;
+    right: 18px; */
+    text-align: center;
+    background-color: #BCDBEA;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+    margin-top: 2.1rem;
+    margin-left: 1rem;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{   
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    /* position: absolute; */
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    /* right: -4px; */
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.help-tip p:before{
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:10px;
+    top:-12px;
+}
+
+.help-tip p:after{ 
+    width:100%;
+    height:40px;
+    content:'';
+    /* position: absolute;
+    top:-40px;
+    left:0; */
+}
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+    0% { 
+        opacity:0; 
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
+
+.out-of-town-rate {
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 
 
@@ -1868,11 +2025,14 @@ Custom Media Query - 640px and up
 
     .join .join-intro {
         grid-area: intro;
+        margin: 0 2rem;
         /* max-width: 60%; */
+
     }
 
     .join .rate {
         grid-area: rate;
+        margin: 3rem 0 5rem 3rem;
     }
 
     .join .get-in-touch {
@@ -1884,9 +2044,9 @@ Custom Media Query - 640px and up
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 
-            "form form intro ."
-            "form form rate ."
-            "form form contact."
+            "form form intro intro"
+            "form form rate rate"
+            "form form contact contact"
             "form form . ."
             "form form . ."
         ;

@@ -97,14 +97,31 @@
             </section>
 
             <section class="rate grid-right">
-                <h3>Standard Rate：</h3>
+                <h3>Standard Rate:</h3>
                 <p>$60 per year</p>
                 <h3>Student Rate:</h3>
                 <p>$10 per year</p>
-                <h3>Out of Town Rate:<span><i class="fas fa-question-circle"></i></span></h3>
+               
+                <section class="out-of-town-rate">
+                <h3>Out of Town Rate: </h3> 
+                <div class="help-tip">
+                    <p>This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+                </div>
+                </section>
+               
+
+                <!-- <div class="help-tip">
+                    <p>This is the inline help tip! It can contain all kinds of HTML. Style it as you please.</p>
+                </div> -->
                 <p>$10 per year</p>
 
-                <p>We will reach out after you submit the application form to facilitate payment.</p>
+
+
+
+
+                <br>
+                <br>
+                <p class="italic">We will reach out after you submit the application form to facilitate payment.</p>
             </section>
 
             <form action="" class="application grid-left">
@@ -116,76 +133,81 @@
                 <p class="personal-info">Personal Information - Coordonnées</p>
                 <br>
 
-                <label for="name">Name of applicant - Nom du postulant:</label> <br>
+                <label for="name">
+                    <p>Name of applicant - Nom du postulant:</p></label> 
                 <input type="text"> <br>
-                <label for="address">Address - Adresse: </label> <br>
+                <label for="address">
+                    <p>Address - Adresse:</p>
+                </label> 
                 <input type="text"> <br>
-                <label for="phones">Phones - Téléphones: </label> <br>
+
+                <p class="phones">Phones - Téléphones:</p>
+                <label for="home"><p>Home - à domicile:</p></label>
                 <input type="text"> <br>
-                <label for="home">Home - à domicile:</label> <br>
+                <label for="business"><p>Business - bureau:</p></label>
                 <input type="text"> <br>
-                <label for="business">Business - bureau:</label> <br>
+                <label for="e-mail"><p class="email">E-mail address - courrier électronique:</p></label>
                 <input type="text"> <br>
-                <label for="e-mail">E-mail address - courrier électronique:</label> <br>
+                <label for="employer"><p>Employer - Employeur:</p></label>
                 <input type="text"> <br>
-                <label for="employer">Employer - Employeur:</label> <br>
+                <label for="job-title"><p>Job title or position - Occupation:</p></label>
                 <input type="text"> <br>
-                <label for="job-title">Job title or position - Occupation:</label> <br>
-                <input type="text"> <br>
-                <label for="duties">Duties which qualify your membership - Responsabilités justifient acceptation:</label>
-                <br>
+                <label for="duties"><p>Duties which qualify your membership - Responsabilités justifient acceptation:</p></label>
                 <input type="text"> 
                 <br>
                 <br>
 
-                <label for="membership">Membership category. Catégorie pour laquelle vous faites la demande:<br>
-                    <input type="radio" id="active" name="active" value="active"> Active - Actif: $60 <br>
-                    <input type="radio" id="non-resident" name="non-resident" value="non-resident"> Non-Resident: $25 <br>
-                    <input type="radio" id="student" name="student" value="student"> Student - Étudiant: $10
+                <!-- <label for="membership"><p>Membership category. Catégorie pour laquelle vous faites la demande:</p><br>
+                    <input type="radio" class="radio" id="active" name="active" value="active"> <span><p>Active - Actif: $60</span></p> <br>
+                    <input type="radio" class="radio" id="non-resident" name="non-resident" value="non-resident"> <span>Non-Resident: $25</span>  <br>
+                    <input type="radio" class="radio" id="student" name="student" value="student"> Student - Étudiant: $10
                     <br>
-                </label>
+                </label> -->
+
+                <section class="membership">
+                    <p>Membership category - Catégorie pour laquelle vous faites la demande:</p>
+                    <input type="radio" id="active" name="mebership">
+                    <label for="active">Active - Actif: $60</label> <br>
+                    <input type="radio" id="non-resident" name="mebership"> 
+                    <label for="non-resident">Non-Resident: $25</label> <br>
+                    <input type="radio" id="student" name="mebership">
+                    <label for="student">Student - Étudiant: $10
+                    </label>
+                </section>
+
                 <br>
-                <label for="sponsors">Sponsors - Parrains (must be members of the club in good standing - membres en
-                    règle)</label> <br>
+                <label for="sponsors"><p>Sponsors - Parrains (must be members of the club in good standing - membres en
+                    règle)</p></label>
                 <input type="text"> <br>
-                <label for="member-number">Member Number</label> <br>
+                <label for="member-number"><p>Member Number</p></label> 
                 <input type="text"> <br>
-                <label for="Signature">Signature (Print)</label> <br>
-                <input type="text"> <br>
-
-                <label for="seconder">Seconder - co-parrain - (PRINT)</label> <br>
-                <input type="text"> <br>
-                <label for="member-number-seconder">Member Number</label> <br>
-                <input type="text"> <br>
-                <label for="signature-seconder">Signature (Print)</label> <br>
-                <input type="text"> <br>
-                <label for="signature-applicant">Signature of Applicant - Signature du postulant: (Print)</label> <br>
+                <label for="Signature"><p>Signature (Print)</p></label> 
                 <input type="text"> <br>
 
-                <label for="date">Date of application - date de remise de l'adhésion:</label> <br>
+                <label for="seconder"><p>Seconder - co-parrain - (PRINT)</p></label> 
+                <input type="text"> <br>
+                <label for="member-number-seconder"><p>Member Number</p></label> 
+                <input type="text"> <br>
+                <label for="signature-seconder"><p>Signature (Print)</p></label> 
+                <input type="text"> <br>
+                <label for="signature-applicant"><p>Signature of Applicant - Signature du postulant: (Print)</p></label> 
+                <input type="text"> <br>
+
+                <label for="date"><p>Date of application - date de remise de l'adhésion:</p></label> 
                 <input type="text"> <br>
                 <input type="submit" class="submit">
-
-                <br>
-                <p>
-                    Note: Please copy and paste this form directly in an email to Iris. Thus, copy this page and then click
-                    on the link to open your email account. Then paste it into the body of the email, fill in and send.</p>
-                <p>
-                    This will constitutue your intention to join the Media Club of Ottawa.
-                    You will be contacted to finalize the procedure.
-                </p>
             </form>
 
             <section class="get-in-touch grid-right">
                 <h3>Get in touch!</h3>
                 <section class="email">
-                    <i class="fas fa-3x fa-envelope"></i> <br>
+                    <i class="fas fa-3x fa-envelope"></i> 
                     <!-- mailto: xxxx -->
                     <a href="#"> Email address </a>
                 </section>
 
                 <section class="facebook">
-                    <i class="fab fa-3x fa-facebook-square"></i> <br>
+                    <i class="fab fa-3x fa-facebook-square"></i> 
                     <a href="#"> Connect with us on Facebook!</a>
                 </section>
             </section>
